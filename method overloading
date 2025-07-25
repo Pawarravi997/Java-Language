@@ -1,0 +1,38 @@
+import java.lang.*;
+
+class Marks {
+    void showMarks(int s1) {
+        System.out.println("C++ = " + s1);
+    }
+
+    void showMarks(int s1, int s2) {
+        System.out.println("C++ = " + s1);
+        System.out.println("DSA = " + s2);
+    }
+
+    void showMarks(int s1, int s2, int s3) {
+        System.out.println("C++ = " + s1);
+        System.out.println("DSA = " + s2);
+        System.out.println("Java = " + s3);
+    }
+
+    public static void main(String[] args) {
+        Marks m1 = new Marks();
+        Marks m2 = new Marks();
+        Marks m3 = new Marks();
+
+        m1.showMarks(45);
+        m2.showMarks(40, 60);
+        m3.showMarks(30, 50, 90);
+    }
+}
+Java c Marks.java   (for compiler)
+Java Marks  (for o/p)
+
+o/p
+C++ = 45
+C++ = 40
+DSA = 60
+C++ = 30
+DSA = 50
+Java = 90
