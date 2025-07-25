@@ -1,0 +1,25 @@
+Import java.lang.*;
+class Student {
+    int rollno;
+
+    // Parameterized method to change rollno
+    static void change(Student s) {
+        s.rollno = 20;
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.rollno = 10;
+        System.out.println("Before change: " + s1.rollno);
+
+        change(s1);  // Passing s1 as parameter to method
+
+        System.out.println("After change: " + s1.rollno);
+    }
+}
+
+Java c Student.java   (for compiler)
+Java Student  (for o/p)
+o/p
+Before change: 10
+After change: 20
