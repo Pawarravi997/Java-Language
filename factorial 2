@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Factorial {
+    void getFactorial() {
+        int num, x, fact = 1;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        num = scan.nextInt();
+
+        for (x = 1; x <= num; x++) {
+            fact = fact * x;
+        }
+
+        System.out.println("Factorial is = " + fact);
+    }
+
+    public static void main(String[] args) {
+        Factorial f1 = new Factorial();
+        f1.getFactorial();
+    }
+}
+
+Java c Factorial.java   (for compiler)
+Java Factorial  (for o/p)
+
+o/p
+Enter a number: 5
+Factorial is = 120
