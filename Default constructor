@@ -1,0 +1,30 @@
+import java.lang.*;
+
+class Employee {
+    int empid;
+    String empname;
+
+    // Default constructor
+    Employee() {
+        System.out.println("Inside default constructor");
+        System.out.println("Employee id = " + empid);
+        System.out.println("Employee name = " + empname);
+    }
+
+    public static void main(String[] args) {
+        Employee e1 = new Employee();   // Correct class name used
+        Employee e2 = new Employee();
+    }
+}
+
+Java c Employee.java   (for compiler)
+Java Employee  (for o/p)
+
+
+o/p
+Inside default constructor
+Employee id = 0
+Employee name = null
+Inside default constructor
+Employee id = 0
+Employee name = null
