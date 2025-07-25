@@ -1,0 +1,53 @@
+class CompanyInfo {
+    static String companyName = "Google";
+    static String companyCode = "1001";
+    static String companyAddress = "Pune";
+}
+
+class EmpDetails1 extends CompanyInfo {
+    static String empTime = "daytime";
+    static String empWork = "8 hours";
+    static String empFacilities = "canteen";
+}
+
+class EmpDetails2 extends EmpDetails1 {
+    String empName;
+    String empId;
+
+    // Constructor to initialize empName and empId
+    EmpDetails2(String empName, String empId) {
+        this.empName = empName;
+        this.empId = empId;
+    }
+
+    public void show() {
+        System.out.println("ID = " + empId);
+        System.out.println("Employee name = " + empName);
+        System.out.println("Company = " + companyName);
+        System.out.println("Company Code = " + companyCode);
+        System.out.println("Address = " + companyAddress);
+        System.out.println("Details of company:");
+        System.out.println("Emp Time = " + empTime);
+        System.out.println("Emp Work = " + empWork);
+        System.out.println("Facilities = " + empFacilities);
+    }
+
+    public static void main(String[] args) {
+        EmpDetails2 e = new EmpDetails2("Ravi", "101");
+        e.show();
+    }
+}
+
+Java c CompanyInfo.java   (for compiler)
+Java CompanyInfo  (for o/p)
+
+o/p
+ID = 101
+Employee name = Ravi
+Company = Google
+Company Code = 1001
+Address = Pune
+Details of company:
+Emp Time = daytime
+Emp Work = 8 hours
+Facilities = canteen
