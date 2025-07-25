@@ -1,0 +1,27 @@
+import java.lang.*;
+
+class Emp {
+    int empid;
+    String empname;
+
+    Emp(int empid, String empname) {
+        this.empid = empid;        // 'this' refers to current object's empid
+        this.empname = empname;    // 'this' refers to current object's empname
+    }
+
+    void show() {
+        System.out.println("Employee id = " + empid);
+        System.out.println("Employee name = " + empname);
+    }
+
+    public static void main(String[] args) {
+        Emp e1 = new Emp(101, "ravi");
+        e1.show();
+    }
+}
+Java c Emp.java   (for compiler)
+Java Emp  (for o/p)
+
+o/p
+Employee id = 101
+Employee name = ravi
