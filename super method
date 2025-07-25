@@ -1,0 +1,21 @@
+class TestSuper {
+    TestSuper() {
+        System.out.println("Inside TestSuper constructor");
+    }
+}
+
+class Test extends TestSuper {
+    Test() {
+        super();  // calls superclass constructor
+        System.out.println("Inside Test constructor");
+    }
+
+    public static void main(String[] args) {
+        Test t1 = new Test();
+    }
+}
+Java c Test.java   (for compiler)
+Java Test  (for o/p)
+o/p
+Inside TestSuper constructor
+Inside Test constructor
