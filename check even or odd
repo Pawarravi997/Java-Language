@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+class Number {
+    void check() {
+        int num;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        num = scan.nextInt();
+        if (num % 2 == 0) {
+            System.out.println("The given number is Even");
+        } else {
+            System.out.println("The given number is Odd");
+        }
+    }
+
+    public static void main(String[] args) {
+        Number n1 = new Number();
+        n1.check();
+    }
+}
+-
+Java c Number.java   (for compiler)
+Java Number  (for o/p)
+o/p  
+   enter a number 10
+   the given number is Even
