@@ -1,0 +1,40 @@
+class Base {
+    int b1; // 100
+    int a;  // 200
+
+    Base() {
+        this.b1 = 100;
+        this.a = 200;
+    }
+}
+
+class Derived extends Base {
+    int d1; // 1000
+    int a;  // 2000 (hides 'a' from Base class)
+
+    Derived() {
+        this.d1 = 1000;
+        this.a = 2000;
+    }
+
+    void show() {
+        System.out.println("Derived class d1 = " + d1);
+        System.out.println("Base class b1 = " + b1);
+        System.out.println("Derived class a = " + a);
+        System.out.println("Base class a = " + super.a);
+    }
+
+    public static void main(String[] args) {
+        Base b = new Base();
+        Derived d = new Derived();
+        d.show();
+    }
+}
+Java c Derived.java   (for compiler)
+Java Derived  (for o/p)
+
+o/p
+Derived class d1 = 1000
+Base class b1 = 100
+Derived class a = 2000
+Base class a = 200
