@@ -1,0 +1,17 @@
+import java.lang.*;
+
+class Cmdarguments1 {
+    public static void main(String[] args) {
+        int num, square;
+        num = Integer.parseInt(args[0]);    // Corrected: Integer.parseInt and closing parenthesis
+        square = num * num;
+        System.out.println("Square: " + square);  // Capital S in System and println for new line
+    }
+}
+
+-
+Java c Cmdarguments1.java   (for compiler)
+Java Cmdarguments1  5  (for o/p)
+
+o/p
+Square: 25
