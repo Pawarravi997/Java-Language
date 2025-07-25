@@ -1,0 +1,35 @@
+import java.lang.*;
+import java.util.Scanner;
+import java.io.Console;
+
+class ConsoleInput {
+    public static void main(String[] args) {
+        String name = "";
+
+        // Using Scanner class
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Input using Scanner class");
+        System.out.print("Enter your full name: ");
+        name = scan.nextLine();  // use nextLine() to read full line (full name)
+        System.out.println("Welcome: " + name);
+
+        // Using Console class
+        Console c = System.console();
+        if (c != null) {
+            System.out.println("Input using Console class");
+            System.out.print("Enter your full name: ");
+            name = c.readLine();
+            System.out.println("Welcome: " + name);
+        } else {
+            System.out.println("Console not available (maybe running in IDE).");
+        }
+    }
+}
+
+Java c ConsoleInput.java   (for compiler)
+Java ConsoleInput  (for o/p)
+o/p
+    input using scanner class
+    enter your full name
+     pawar ravi udhav
+     welcome:pawar
