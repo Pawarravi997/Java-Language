@@ -1,0 +1,33 @@
+Import java.lang.*;
+import java.util.Scanner;
+
+public class AdditionTest {
+    void addition() {
+        int num1, num2, add;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        num1 = scan.nextInt();
+
+        System.out.print("Enter second number: ");
+        num2 = scan.nextInt();
+
+        add = num1 + num2;
+
+        System.out.println("Addition = " + add);
+    }
+
+    public static void main(String[] args) {
+        AdditionTest t1 = new AdditionTest();
+        t1.addition();
+    }
+}
+
+Java c test.java   (for compiler)
+Java test  (for o/p)
+
+o/p
+Enter first number: 10
+Enter second number: 20
+Addition = 30
+
