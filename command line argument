@@ -1,0 +1,19 @@
+Import java.lang.*;
+public class Cmdarguments {
+    public static void main(String[] args) {
+        System.out.println("Length of args = " + args.length);
+
+        for (int i = 0; i < args.length; i++) {
+            System.out.println("args[" + i + "] = " + args[i]);
+        }
+    }
+}
+
+Java c Cmdarguments.java   (for compiler)
+Java Cmdarguments   january feburary march april  (for o/p)
+
+o/p
+Length of args = 3
+args[0] = apple
+args[1] = banana
+args[2] = cherry
